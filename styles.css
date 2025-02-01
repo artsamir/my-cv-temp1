@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0ededa9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resume-container {
+    width: 210mm;
+    height: 297mm;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 12mm;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.left-side {
+    flex: 1;
+}
+
+.left-side h1 {
+    margin: 5px 0;
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #333;
+}
+
+.left-side p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.left-side .contact{
+    margin: 25px 0 0 0;
+}
+
+.left-side .contact p {
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color from the parent element */
+}
+
+.left-side .profession-title {
+    color: #333;
+    letter-spacing: 0.3px;
+}
+
+.right-side {
+    flex: 0 0 auto;
+    margin-right: 15px;
+}
+
+.profile-photo {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 3px solid #fcfafa;
+}
+
+.pfp-border {
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+    border: 7px solid #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.career-section h2 {
+    font-size: 22px;
+    color: #555;
+    margin: 11px 0 0 0;
+}
+
+.career-section p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    text-align: justify;
+    border-bottom: 2px solid #333;
+    padding-bottom: 7px;
+    line-height: 22px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 16px;
+    line-height: 10px;
+}
+
+ul {
+    margin: 10px 0;
+}
+
+li {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.two-columnBody {
+    display: flex;
+
+}
+
+.left-column{
+    width: 35%;
+    border-right: 1px solid #555;
+}
+
+.personal-section {
+    border-bottom: 2px solid #555;
+}
+
+.personal-section h2 {
+    margin: auto;
+}
+
+.technicalSkill-section {
+    border-bottom: 2px solid #555;
+}
+
+.technicalSkill-section h2 {
+    margin: 10px 0;
+}
+.softSkill-section {
+    border-bottom: 2px solid #555;
+}
+
+.softSkill-section h2 {
+    margin: 10px 0;
+}
+
+.interest-section {
+    border-bottom: 2px solid #555;
+}
+
+.interest-section h2 {
+    margin: 10px 0;
+}
+
+.language-section h2 {
+    margin: 10px 0;
+}
+
+/* ---------------- Right Column Section Education and work Exp------------------------------------------------------------------------- */
+.right-column {
+    padding-left: 20px;
+    width: 70%;
+}
+
+.right-column h2 {
+    margin: auto;
+}
+
+.education-table {
+    width: 100%;
+}
+
+th, td {
+    padding: 1.5px;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.marks, .institute, .board {
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 1px;
+    width: 75px;
+}
+
+.line div {
+    width: 3px;
+    height: 70px;
+    background-color: #555;
+    margin-top: 10px;
+}
+
+.course, .marks, .institute, .board {
+    padding-left: 10px;
+}
+
+.year {
+    padding-right: 5px;
+    color: #333;
+}
+
+.course {
+    padding-top: 10px;
+}
+
+.right-column .internship {
+    margin-top: 15px;
+}
+
+.duration {
+    width: 110px;
+}
+
+.company-name {
+    padding-top: 10px;
+}
+
+.print-btn {
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.print-btn:hover {
+    background-color: #45a049;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .resume-container {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 10mm;
+        box-shadow: none;
+    }
+
+    /* .header, .two-columnBody, .right-column, .left-column, .education-table {
+        border: none;
+        box-shadow: none;
+    } */
+
+    .print-btn {
+        display: none;
+    }
+
+    @page {
+        margin: 0;
+    }
+
+    footer, header {
+        display: none;
+    }
+
+    /* div, span, footer {
+        display: none !important;
+    } */
+
+}
